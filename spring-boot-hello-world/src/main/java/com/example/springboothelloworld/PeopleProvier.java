@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class PeopleProvier {
 	@Bean
 	public People getNmae() {
-		return new People("y2sang provider");
+		// return new People("y2sang provider");
+		return new People();
 	}
 }

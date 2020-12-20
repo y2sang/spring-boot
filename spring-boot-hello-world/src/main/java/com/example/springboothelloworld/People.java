@@ -2,10 +2,14 @@ package com.example.springboothelloworld;
 
 public class People {
 	private String name;
-	
-	public People(String name) {
-		super();
-		this.name = name;
+	private int age;
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public String getName() {
@@ -18,7 +22,7 @@ public class People {
 
 	@Override
 	public String toString() {
-		return "People [name=" + name + "]";
+		return "People [name=" + name + ", age=" + age + "]";
 	}
-	
+
 }
