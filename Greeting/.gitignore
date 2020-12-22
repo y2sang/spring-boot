@@ -1,0 +1,7 @@
+/.gradle/*
+/.idea/*
+*.class
+/gradlew
+/gradlew.bat
+/settings.gradle
+/build/tmp/compileJava/source-classes-mapping.txt
