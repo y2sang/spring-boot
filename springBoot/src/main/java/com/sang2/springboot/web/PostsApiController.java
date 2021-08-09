@@ -24,6 +24,6 @@ public class PostsApiController {
 
     @GetMapping(IConstants.URI_POSTS + "/{id}")
     public PostsDto.Response findById(@PathVariable Long id) {
-        return null;
+        return postsService.findById(id);
     }
 }

@@ -19,6 +19,7 @@ public class PostsDto {
             this.id = entity.getId();
             this.title = entity.getContent();
             this.content = entity.getContent();
+            this.author = entity.getAuthor();
         }
     }
 
