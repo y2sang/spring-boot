@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.time.LocalDateTime;
+
 public class PostsDto {
 
     @Getter
@@ -13,13 +15,16 @@ public class PostsDto {
         private String title;
         private String content;
         private String author;
+        private LocalDateTime modifiedDate;
 
         @Builder
         public Info(Posts entity) {
             this.id = entity.getId();
-            this.title = entity.getContent();
+            this.title = entity.getTitle();
             this.content = entity.getContent();
             this.author = entity.getAuthor();
+            this.modifiedDate = entity.getModifiedDate();
+
         }
     }
 
